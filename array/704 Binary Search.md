@@ -2,7 +2,9 @@
 #704 Binary Search
 [leetcode](https://leetcode.com/problems/binary-search/)
 
-I just did this leetcode recently so it wasn't really hard to code
+I just did this leetcode recently so it wasn't really hard to code. Put the solutions below. Personally I prefer [left,right], as we operate on left and right with the same logics.
+
+One question I was having with [left,right) is, I accidentally put right = mid when the value is smallest is target - I believe my original thought is since it is smaller, we want to move to the left side. I twould be more helpful to actually draw the picture next time
 
 
 ### Python [left,right]
@@ -49,4 +51,6 @@ class Solution(object):
                 right=mid
         return -1
 ```
+
+
 
