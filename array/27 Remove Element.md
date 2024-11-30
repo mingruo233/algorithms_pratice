@@ -1,5 +1,5 @@
 
-#27 Remove Element
+# 27 Remove Element
 [leetcode](https://leetcode.com/problems/remove-element/description/)
 
 I actually like two pointers for some reasons.
@@ -18,7 +18,6 @@ slow - tracks the space of new array (i.e next available slot for the new array)
 fast - find the good element. If it is good, slow takes it and slow move to the next available. If it is bad, skip it because there are two cases:
 1. If it is outside of k, we dont care it
 2. If it is inside of k, it will become an available slot, which means slow will points to it eventually and good value will takes place of it
-### Python [left,right]
 
 ```python
 class Solution(object):

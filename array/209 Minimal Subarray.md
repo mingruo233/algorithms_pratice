@@ -1,24 +1,12 @@
 
-#27 Minimum Size Subarray Sum 
+# 27 Minimum Size Subarray Sum 
 [leetcode](https://leetcode.com/problems/minimum-size-subarray-sum/description/)
 
-I actually like two pointers for some reasons.
-Anywa, looking at the problem, firstly it have some conditions:
-1. We need move in place 
-2. we only need k elements, which means we have len(nums) - k space to store something that we dont use, which in this case, the first intution is the target element
+A variant of two pointers in my minde - sliding windows. One condition:
+1. All positive integers - this gurantee that pops up element will always makes the sum smaller instead of larger
 
-Previously thinking of this question, I am trapped to find the value, and kinda mixed it. However, looking back to the result **What is the final output we want it to be?**
+One points to the starting of the subarray and one points to the ending of the subarray, so we we are satisified with the idea that current bis greater than or equal to target, we can start to pop left element to test.
 
-we want a new array (kinda) with no val.
-
-Instead of thinking to find the val itself, lets find the values that is not val - which means it is the element of new array.
-
-Then the idea is simple, find new element, keep it. Then the answer should pops pretty soon:
-slow - tracks the space of new array (i.e next available slot for the new array)
-fast - find the good element. If it is good, slow takes it and slow move to the next available. If it is bad, skip it because there are two cases:
-1. If it is outside of k, we dont care it
-2. If it is inside of k, it will become an available slot, which means slow will points to it eventually and good value will takes place of it
-### Python [left,right]
 
 ```python
 class Solution(object):
@@ -33,7 +21,7 @@ class Solution(object):
         end = 0
         cur= 0
         result = float('inf')
-        for end in range(len(nums)): #we care including all values [start,end]
+        for end in range(len(nums)): #we including all values [start,end]
             cur+=nums[end]
             while cur>=target and start<=end:
                 result = min(result,end-start+1)

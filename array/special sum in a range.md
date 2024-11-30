@@ -1,5 +1,5 @@
 
-#Special. Sum in range
+# Special. Sum in range
 [question](https://www.programmercarl.com/kamacoder/0058.%E5%8C%BA%E9%97%B4%E5%92%8C.html)
 
 The idea for this one is the prefix. More importantly, it introduce an idea of reusing the information we have previosuly. 

@@ -1,5 +1,5 @@
 
-#704 Binary Search
+# 704 Binary Search
 [leetcode](https://leetcode.com/problems/binary-search/)
 
 I just did this leetcode recently so it wasn't really hard to code. Put the solutions below. Personally I prefer [left,right], as we operate on left and right with the same logics.

@@ -1,5 +1,5 @@
 
-#Special. Minimal Difference in matrix.md
+# pecial. Minimal Difference in matrix.md
 [question](https://www.programmercarl.com/kamacoder/0058.%E5%8C%BA%E9%97%B4%E5%92%8C.html)
 
 I was a bit not confident when doing the problem, have to double check the correct answer partially to ensure I am on the right page.
